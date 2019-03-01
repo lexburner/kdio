@@ -2,6 +2,16 @@
 
 A Java Direct IO framework which is very simple to use.
 
+# Add to your project
+
+```xml
+    <dependency>
+        <groupId>moe.cnkirito.kdio</groupId>
+        <artifactId>kdio-core</artifactId>
+        <version>1.0.0</version>
+    </dependency>
+```
+
 # sample
 
 ### notice
