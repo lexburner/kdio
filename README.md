@@ -1,4 +1,4 @@
-# kdio
+# Project
 
 A Java Direct IO framework which is very simple to use.
 
@@ -12,9 +12,9 @@ A Java Direct IO framework which is very simple to use.
     </dependency>
 ```
 
-# sample
+# Sample
 
-### notice
+### Notice
 
 ```
     // file path should be specific since the different file path determine whether your system support direct io
@@ -26,7 +26,7 @@ A Java Direct IO framework which is very simple to use.
 
 > Usually, only specific linux system support direct io. You should own a linux server.
 
-### write
+### Write
 
 ```java
     private static void write() throws IOException {
@@ -44,7 +44,7 @@ A Java Direct IO framework which is very simple to use.
     }
 ```
 
-### read
+### Read
 
 ```java
     public static void read() throws IOException {
@@ -62,7 +62,7 @@ A Java Direct IO framework which is very simple to use.
     }
 ```
 
-### install & run
+### Install & Run
 
 ```
 mvn clean install -DskipTests
