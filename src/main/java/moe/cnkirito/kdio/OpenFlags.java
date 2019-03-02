@@ -16,7 +16,7 @@
 package moe.cnkirito.kdio;
 
 /**
- * Constants for {@link DirectIOLib#oDirectOpen(String, boolean)}. </p>
+ * Constants for {@link DirectIOLib#oDirectOpen(String, boolean)}.
  */
 public final class OpenFlags {
     public static final int O_RDONLY = 00;

@@ -6,7 +6,6 @@ import java.nio.ByteBuffer;
 
 /**
  * @author daofeng.xjf
- * @date 2019/2/28
  */
 public class DirectIOTestMain {
 
@@ -45,6 +44,15 @@ public class DirectIOTestMain {
         } else {
             throw new RuntimeException("your system do not support direct io");
         }
+    }
+
+    /**
+     *
+     * @param input
+     * @return
+     */
+    public String test(String input){
+        return null;
     }
 
 }

@@ -21,7 +21,7 @@ import java.nio.channels.Channel;
 
 public interface DirectChannel extends Channel {
     /**
-     * Writes from the <tt>src</tt> buffer into this channel at <tt>position</tt>. </p>
+     * Writes from the <tt>src</tt> buffer into this channel at <tt>position</tt>.
      *
      * @param src
      *        The {@link ByteBuffer} to write from
@@ -35,7 +35,7 @@ public interface DirectChannel extends Channel {
     int write(ByteBuffer src, long position) throws IOException;
 
     /**
-     * Reads from this channel into the <tt>dst</tt> buffer from <tt>position</tt>. </p>
+     * Reads from this channel into the <tt>dst</tt> buffer from <tt>position</tt>.
      *
      * @param dst
      *        The {@link ByteBuffer} to read into
@@ -59,7 +59,7 @@ public interface DirectChannel extends Channel {
     boolean isReadOnly();
 
     /**
-     * Truncates this file's length to <tt>fileLength</tt>. </p>
+     * Truncates this file's length to <tt>fileLength</tt>.
      *
      * @param fileLength The length to which to truncate
      *

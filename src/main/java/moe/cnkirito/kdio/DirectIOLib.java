@@ -30,11 +30,11 @@ import java.util.List;
 
 /**
  * Class containing native hooks and utility methods for performing direct I/O, using
- * the Linux <tt>O_DIRECT</tt> flag. </p>
+ * the Linux <tt>O_DIRECT</tt> flag.
  *
- * <p> This class is initialized at class load time, by registering JNA hooks into native methods.
+ * This class is initialized at class load time, by registering JNA hooks into native methods.
  *     It also calculates Linux kernel version-dependent alignment amount (in bytes) for use with the <tt>O_DIRECT</tt> flag,
- *     when given a string for a file or directory.</p>
+ *     when given a string for a file or directory.
  */
 public class DirectIOLib {
     private static final Logger logger = Logger.getLogger(DirectIOLib.class);
@@ -97,7 +97,7 @@ public class DirectIOLib {
 
 
     /**
-     * Static method to register JNA hooks for doing direct I/O </p>
+     * Static method to register JNA hooks for doing direct I/O
      *
      * @param workingDir
      *        A directory within the mounted file system on which we'll be working
@@ -164,7 +164,7 @@ public class DirectIOLib {
     /**
      * Interface into native pread function. Always reads an entire buffer,
      * unlike {@link #pwrite(int, ByteBuffer, long) pwrite()} which uses buffer state
-     * to determine how much of buffer to write.</p>
+     * to determine how much of buffer to write.
      *
      * @param fd
      *        A file discriptor to pass to native pread
@@ -193,7 +193,7 @@ public class DirectIOLib {
 
     /**
      * Interface into native pwrite function. Writes bytes corresponding to the nearest file
-     * system block boundaries between <tt>buf.position()</tt> and <tt>buf.limit()</tt>.</p>
+     * system block boundaries between <tt>buf.position()</tt> and <tt>buf.limit()</tt>.
      *
      * @param fd
      *        A file descriptor to pass to native pwrite
@@ -242,7 +242,6 @@ public class DirectIOLib {
      *
      * @return An integer file descriptor for the opened file
      *
-     * @throws IOException
      */
     public int oDirectOpen(String pathname, boolean readOnly) throws IOException {
         int flags = OpenFlags.O_DIRECT;
